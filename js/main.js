@@ -23,13 +23,13 @@ $btnIn.on('click', function () {
 });
 
 var $btnbounce = $('.btn-bounce');
-var $circle = ('.circle')
+var $circle = $('.circle');
 
 $btnbounce.on('click', function () {
     $circle.toggleClass('js-ball-bounce');
     
-    $ball.on('webkitAnimationEnd animationend', function () {
-  $ball.removeClass('js-ball-bounce');
+  $circle.on('webkitAnimationEnd animationend', function () {
+  $circle.removeClass('js-ball-bounce');
   });
   
 });
