@@ -127,7 +127,8 @@ div {
 }
 
 .animation {
-
+ -webkit-animation: collapsed 500ms linear;
+ animation: collapsed 500ms linear;
 }
 
 @-webkit-keyframes ball-bounce {
@@ -171,3 +172,23 @@ div {
         right: 180px; top:60px;
     }
 }
+
+@-webkit-keyframes collapsed {
+  0% {
+        max-height: 0em;
+  }
+    100% {
+        max-height: 2em;
+    }
+}
+
+
+@keyframes collapsed {
+    0% {
+        max-height: 0em;
+    }
+    100% {
+        max-height: 2em;
+    }
+}
+
