@@ -90,6 +90,7 @@ div {
   border: 1px solid #ccc;
   overflow: hidden;
   overflow-y: auto;
+  
 }
 
 .list li {
@@ -125,23 +126,48 @@ div {
     animation: ball-bounce 500ms linear;
 }
 
-@keyframes ball-bounce {
+.animation {
+
+}
+
+@-webkit-keyframes ball-bounce {
     0% {
-        top:50px;
+        right: 30px; top:50px;
     }
     20% {
-        top:60px;
+        right: 60px; top:60px;
     }
     
     50% {
-        top:70px;
+        right: 90px; top:70px;
     }
     
     80% {
-        top:50px;
+        right: 120px; top:50px;
     }
     
     100% {
-        top:60px
+        right: 180px; top:60px;
+    }
+}
+
+@keyframes ball-bounce {
+    0% {
+        right: 30px; top:50px;
+    }
+    20% {
+        right: 60px; top:60px;
+    }
+    
+    50% {
+        right: 90px; top:70px;
+    }
+    
+    80% {
+        right: 120px; top:50px;
+    }
+    
+    100% {
+        right: 180px; top:60px;
     }
 }

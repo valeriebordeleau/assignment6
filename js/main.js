@@ -42,6 +42,8 @@ $btnAppend.on('click',function (eventObject) {
      
     var $li = $('<li>Add Item</li>');
 
+
     $list.append($li);
+    $li.addClass('animation')
     
  });
