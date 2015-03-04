@@ -17,6 +17,7 @@ section {
   position: relative;
 
   border-bottom: 1px solid #ccc;
+  overflow: hidden;
 }
 
 section:nth-child(5) {
@@ -105,7 +106,7 @@ div {
     border-radius: 20px;
     max-height: 0px;
     overflow: hidden;
-    transition: all 200ms linear;
+    transition: all 500ms linear;
 }
 
 .js-btn-collapse-expand {
@@ -117,5 +118,5 @@ div {
 }
 
 .js-btn-move {
-    left: calc(50% + 500px);
+    right: -10em;
 }
