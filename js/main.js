@@ -33,3 +33,15 @@ $btnbounce.on('click', function () {
   });
   
 });
+
+var $list = $('.list');
+var $btnAppend = $('.btn-append');
+
+$btnAppend.on('click',function (eventObject) {
+    eventObject.preventDefault();
+     
+    var $li = $('<li>Add Item</li>');
+
+    $list.append($li);
+    
+ });
