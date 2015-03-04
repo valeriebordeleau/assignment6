@@ -120,3 +120,24 @@ div {
 .js-btn-move {
     right: -10em;
 }
+
+@keyframes ball-bounce {
+    0% {
+        top:300px;
+    }
+    20% {
+        top:400px;
+    }
+    
+    50% {
+        top: 320px;
+    }
+    
+    80% {
+        top: 400px;
+    }
+    
+    100% {
+        top: 400px
+    }
+}

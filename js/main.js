@@ -21,3 +21,15 @@ var $diamond = $('.diamond');
 $btnIn.on('click', function () {
     $diamond.toggleClass('js-btn-move');
 });
+
+var $btnbounce = $('.btn-bounce');
+var $circle = ('.circle')
+
+$btnbounce.on('click', function () {
+    $circle.toggleClass('js-ball-bounce');
+    
+    $ball.on('webkitAnimationEnd animationend', function () {
+  $ball.removeClass('js-ball-bounce');
+  });
+  
+});
